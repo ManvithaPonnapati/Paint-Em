@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="77m-wX-26O">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <view opaque="NO" alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sFA-Ir-HsB">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="sFA-Ir-HsB" secondAttribute="bottom" id="KfK-b0-UlZ"/>
+                            <constraint firstItem="77m-wX-26O" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="UO2-j6-lWc"/>
+                            <constraint firstItem="sFA-Ir-HsB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="Vg3-NF-nGJ"/>
+                            <constraint firstItem="sFA-Ir-HsB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="Xig-DL-7kF"/>
+                            <constraint firstItem="77m-wX-26O" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="aQj-3Q-tbz"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="77m-wX-26O" secondAttribute="bottom" id="pHY-rk-MAd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="77m-wX-26O" secondAttribute="trailing" constant="-20" id="qdc-dg-9hX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sFA-Ir-HsB" secondAttribute="trailing" constant="-20" id="uhP-zC-Wfi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundView" destination="sFA-Ir-HsB" id="mGo-ex-Esv"/>
+                        <outlet property="cameraView" destination="77m-wX-26O" id="82G-7R-jli"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="335" y="361"/>
+        </scene>
+    </scenes>
+</document>
